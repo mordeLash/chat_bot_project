@@ -1,0 +1,15 @@
+<launch>
+  <arg name="model_name_arg" default="qwen2:0.5b"/>
+  <arg name="character_arg" default="joke_expert"/>
+  <!-- Node to capture audio -->
+  <node pkg="audio_transcriber" type="mic_publisher.py" name="mic_publisher" output="screen"/>
+
+  <!-- Node to transcribe audio -->
+  <node pkg="audio_transcriber" type="asr_transcriber.py" name="asr_transcriber" output="screen"/>
+
+  <!-- Node: LLM Chatbot -->
+  <node pkg="audio_transcriber" type="llm_node.py" name="llm_node" output="screen"> 
+  <param name="model_name" value = "$(arg model_name_arg)"/>
+  <param name="character" value = "$(arg character_arg)"/>
+  </node>
+</launch>

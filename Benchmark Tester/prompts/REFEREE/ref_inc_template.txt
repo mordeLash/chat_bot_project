@@ -1,0 +1,4 @@
+Question: {question} 
+Correct Answers: {correct_answers}  
+Incorrect Answers: {incorrect_answers}             
+Response: {response}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bash Command Control</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Launch ROS from Browser</h1>
+
+    <!-- Model Name Dropdown -->
+    <label for="dropdown1">Model Name</label><br/>
+    <select id="dropdown1">
+      <option value="joke_expert">Joke Expert</option>
+      <option value="volleyball_expert">Volleyball Expert</option>
+      <option value="signal_processing_expert">Signal Processing Expert</option>
+    </select>
+
+    <!-- Character Dropdown -->
+    <br/>
+    <label for="dropdown2">Character</label><br/>
+    <select id="dropdown2">
+      <option value="qwen2:0.5b">Qwen2 0.5b</option>
+      <option value="qwen2:0.5b">Qwen2 0.5b</option>
+      <option value="qwen2:0.5b">Qwen2 0.5b</option>
+    </select>
+
+    <br/>
+
+    <button class="start-btn" onclick="startCommand()">Start Command</button>
+    <button class="stop-btn" onclick="stopCommand()">Stop Command</button>
+  </div>
+
+  <script>
+    function startCommand() {
+      const model_name = document.getElementById('dropdown1').value;
+      const character = document.getElementById('dropdown2').value;
+
+      fetch(`/start?model_name=${model_name}&character=${character}`, {
+        method: 'POST'
+      })
+    }
+    function stopCommand() {
+      fetch('/stop?', { method: 'POST' });
+    }
+  
+  </script>
+</body>
+</html>

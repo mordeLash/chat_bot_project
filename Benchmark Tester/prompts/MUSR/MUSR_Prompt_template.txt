@@ -1,0 +1,4 @@
+Answer the following multiple-choice question by selecting the most correct option:        
+        Narrative: {narrative}
+        Question: "{question}"
+        Options: {choices}

@@ -1,0 +1,7 @@
+
+            <PASSAGE>
+            {context}
+            </PASSAGE>
+            <QUESTION>
+            {question}
+            </QUESTION>

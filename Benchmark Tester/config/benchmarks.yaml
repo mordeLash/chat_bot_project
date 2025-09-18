@@ -1,0 +1,109 @@
+MMLU_simp:
+  eval: multiple_choice
+  SP: MMLU/MMLU_simp
+  PT: MMLU/MMLU_Prompt_template
+  dataset_name: MMLU
+
+MMLU_eng:
+  eval: multiple_choice
+  SP: MMLU/MMLU_eng
+  PT: MMLU/MMLU_Prompt_template
+  dataset_name: MMLU
+
+MUSR_simp:
+  eval: multiple_choice
+  SP: MUSR/MUSR_simp
+  PT: MUSR/MUSR_Prompt_template
+  dataset_name: MUSR
+
+MUSR_eng:
+  eval: multiple_choice
+  SP: MUSR/MUSR_eng
+  PT: MUSR/MUSR_Prompt_template
+  dataset_name: MUSR
+
+
+SQUAD_simp:
+  eval: referee
+  incorrect_answers: False
+  SP: SQUAD/SQUAD_simp
+  PT: SQUAD/SQUAD_Prompt_template
+  referee_SP: "REFEREE/ref_system"
+  referee_PT: "REFEREE/ref_template"
+  dataset_name: SQUAD
+
+SQUAD_eng:
+  eval: referee
+  incorrect_answers: False
+  SP: SQUAD/SQUAD_eng
+  PT: SQUAD/SQUAD_Prompt_template
+  referee_SP: "REFEREE/ref_system"
+  referee_PT: "REFEREE/ref_template"
+  dataset_name: SQUAD
+
+TRUTHFUL_MCQ_simp:
+  eval: multiple_choice
+  SP: TRUTHFUL_MCQ/TRUTHFUL_MCQ_simp
+  PT: TRUTHFUL_MCQ/TRUTHFUL_MCQ_Prompt_template
+  referee_SP: "REFEREE/ref_inc_system"
+  referee_PT: "REFEREE/ref_inc_template"
+  dataset_name: TRUTHFUL_QA
+
+TRUTHFUL_MCQ_eng:
+  eval: multiple_choice
+  SP: TRUTHFUL_MCQ/TRUTHFUL_MCQ_eng
+  PT: TRUTHFUL_MCQ/TRUTHFUL_MCQ_Prompt_template
+  referee_SP: "REFEREE/ref_inc_system"
+  referee_PT: "REFEREE/ref_inc_template"
+  dataset_name: TRUTHFUL_QA
+
+TRUTHFUL_OP_simp:
+  eval: referee
+  incorrect_answers: True
+  SP: TRUTHFUL_OP/TRUTHFUL_OP_simp
+  PT: TRUTHFUL_OP/TRUTHFUL_OP_Prompt_template
+  referee_SP: "REFEREE/ref_inc_system"
+  referee_PT: "REFEREE/ref_inc_template"
+  dataset_name: TRUTHFUL_QA
+
+TRUTHFUL_OP_eng:
+  eval: referee
+  incorrect_answers: True
+  SP: TRUTHFUL_OP/TRUTHFUL_OP_eng
+  PT: TRUTHFUL_OP/TRUTHFUL_OP_Prompt_template
+  referee_SP: "REFEREE/ref_inc_system"
+  referee_PT: "REFEREE/ref_inc_template"
+  dataset_name: TRUTHFUL_QA
+
+
+ARC_simp:
+  eval: multiple_choice
+  SP: ARC/ARC_simp
+  PT: ARC/ARC_Prompt_template
+  dataset_name: ARC
+
+ARC_eng:
+  eval: multiple_choice
+  SP: ARC/ARC_eng
+  PT: ARC/ARC_Prompt_template
+  dataset_name: ARC
+
+web_questions_simp:
+  eval: referee
+  incorrect_answers: False
+  SP: web_questions/web_questions_simp
+  PT: web_questions/web_questions_Prompt_template
+  referee_SP: "REFEREE/ref_system"
+  referee_PT: "REFEREE/ref_template"
+  dataset_name: web_questions
+
+web_questions_eng:
+  eval: referee
+  incorrect_answers: False
+  SP: web_questions/web_questions_eng
+  PT: web_questions/web_questions_Prompt_template
+  referee_SP: "REFEREE/ref_system"
+  referee_PT: "REFEREE/ref_template"
+  dataset_name: web_questions
+
+

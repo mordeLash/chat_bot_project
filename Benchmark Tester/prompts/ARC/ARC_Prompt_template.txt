@@ -1,0 +1,5 @@
+ANSWER THE FOLLOWING QUESTION:  
+
+        Question: {question}
+        {choices}
+        YOUR ANSWER MUST CONTAIN ONLY THE CORRECT CHOICE LIKE [x]
