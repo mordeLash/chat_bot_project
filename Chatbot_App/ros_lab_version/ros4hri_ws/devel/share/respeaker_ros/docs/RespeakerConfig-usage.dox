@@ -1,0 +1,38 @@
+\subsubsection usage Usage
+\verbatim
+<node name="respeaker_ros" pkg="respaker_ros" type="respeaker_ros">
+  <param name="STATNOISEONOFF" type="bool" value="True" />
+  <param name="GAMMA_ETAIL" type="double" value="1.0" />
+  <param name="AGCTIME" type="double" value="0.982401" />
+  <param name="GAMMA_NS_SR" type="double" value="1.0" />
+  <param name="AGCDESIREDLEVEL" type="double" value="0.005" />
+  <param name="MIN_NN_SR" type="double" value="0.3" />
+  <param name="STATNOISEONOFF_SR" type="bool" value="True" />
+  <param name="MIN_NS_SR" type="double" value="0.15" />
+  <param name="GAMMA_ENL" type="double" value="1.0" />
+  <param name="NLAEC_MODE" type="int" value="0" />
+  <param name="TRANSIENTONOFF" type="bool" value="True" />
+  <param name="RT60ONOFF" type="bool" value="True" />
+  <param name="AGCGAIN" type="double" value="11.119642" />
+  <param name="NONSTATNOISEONOFF" type="bool" value="True" />
+  <param name="AECFREEZEONOFF" type="bool" value="False" />
+  <param name="AGCMAXGAIN" type="double" value="31.6" />
+  <param name="CNIONOFF" type="bool" value="True" />
+  <param name="NONSTATNOISEONOFF_SR" type="bool" value="True" />
+  <param name="NLATTENONOFF" type="bool" value="False" />
+  <param name="ECHOONOFF" type="bool" value="True" />
+  <param name="AECNORM" type="double" value="2.0" />
+  <param name="AECSILENCELEVEL" type="double" value="0.0" />
+  <param name="GAMMA_E" type="double" value="1.0" />
+  <param name="FREEZEONOFF" type="bool" value="False" />
+  <param name="AGCONOFF" type="bool" value="True" />
+  <param name="MIN_NN" type="double" value="0.3" />
+  <param name="MIN_NS" type="double" value="0.15" />
+  <param name="GAMMA_NS" type="double" value="1.0" />
+  <param name="HPFONOFF" type="int" value="1" />
+  <param name="GAMMAVAD_SR" type="double" value="15.0" />
+  <param name="GAMMA_NN" type="double" value="1.1" />
+  <param name="GAMMA_NN_SR" type="double" value="1.1" />
+</node>
+\endverbatim
+

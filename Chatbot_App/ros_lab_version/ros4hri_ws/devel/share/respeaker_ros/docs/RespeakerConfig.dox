@@ -1,0 +1,37 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~STATNOISEONOFF" : \b [bool] Stationary noise suppression. 0 = OFF 1 = ON min: False, default: True, max: True
+- \b "~GAMMA_ETAIL" : \b [double] Over-subtraction factor of echo (tail components). min .. max attenuation min: 0.0, default: 1.0, max: 3.0
+- \b "~AGCTIME" : \b [double] Ramps-up / down time-constant in seconds. min: 0.1, default: 0.982401, max: 1.0
+- \b "~GAMMA_NS_SR" : \b [double] Over-subtraction factor of stationary noise for ASR.  [0.0 .. 3.0] (default: 1.0) min: 0.0, default: 1.0, max: 3.0
+- \b "~AGCDESIREDLEVEL" : \b [double] Target power level of the output signal.  [-inf .. 0] dBov (default: -23dBov = 10log10(0.005)) min: 0.0, default: 0.005, max: 0.99
+- \b "~MIN_NN_SR" : \b [double] Gain-floor for non-stationary noise suppression for ASR. [-inf .. 0] dB (default: -10dB = 20log10(0.3)) min: 0.0, default: 0.3, max: 1.0
+- \b "~STATNOISEONOFF_SR" : \b [bool] Stationary noise suppression for ASR. 0 = OFF 1 = ON min: False, default: True, max: True
+- \b "~MIN_NS_SR" : \b [double] Gain-floor for stationary noise suppression for ASR. [-inf .. 0] dB (default: -16dB = 20log10(0.15)) min: 0.0, default: 0.15, max: 1.0
+- \b "~GAMMA_ENL" : \b [double] Over-subtraction factor of non-linear echo. min .. max attenuation min: 0.0, default: 1.0, max: 5.0
+- \b "~NLAEC_MODE" : \b [int] Non-Linear AEC training mode. 0 = OFF 1 = ON - phase 1 2 = ON - phase 2 min: 0, default: 0, max: 2
+- \b "~TRANSIENTONOFF" : \b [bool] Transient echo suppression. 0 = OFF 1 = ON min: False, default: True, max: True
+- \b "~RT60ONOFF" : \b [bool] RT60 Estimation for AES. 0 = OFF 1 = ON min: False, default: True, max: True
+- \b "~AGCGAIN" : \b [double] Current AGC gain factor.  [0 .. 60] dB (default: 0.0dB = 20log10(1.0)) min: 1.0, default: 11.119642, max: 1000.0
+- \b "~NONSTATNOISEONOFF" : \b [bool] Non-stationary noise suppression. 0 = OFF 1 = ON min: False, default: True, max: True
+- \b "~AECFREEZEONOFF" : \b [bool] Adaptive Echo Canceler updates inhibit. 0 = Adaptation enabled 1 = Freeze adaptation, filter only min: False, default: False, max: True
+- \b "~AGCMAXGAIN" : \b [double] Maximum AGC gain factor.  [0 .. 60] dB (default 30dB = 20log10(31.6)) min: 1.0, default: 31.6, max: 1000.0
+- \b "~CNIONOFF" : \b [bool] Comfort Noise Insertion. 0 = OFF 1 = ON min: False, default: True, max: True
+- \b "~NONSTATNOISEONOFF_SR" : \b [bool] Non-stationary noise suppression for ASR. 0 = OFF 1 = ON min: False, default: True, max: True
+- \b "~NLATTENONOFF" : \b [bool] Non-Linear echo attenuation. 0 = OFF 1 = ON min: False, default: False, max: True
+- \b "~ECHOONOFF" : \b [bool] Echo suppression. 0 = OFF 1 = ON min: False, default: True, max: True
+- \b "~AECNORM" : \b [double] Limit on norm of AEC filter coefficients min: 0.25, default: 2.0, max: 16.0
+- \b "~AECSILENCELEVEL" : \b [double] Threshold for signal detection in AEC [-inf .. 0] dBov (Default: -80dBov = 10log10(1x10-8)) min: 0.0, default: 0.0, max: 1.0
+- \b "~GAMMA_E" : \b [double] Over-subtraction factor of echo (direct and early components). min .. max attenuation min: 0.0, default: 1.0, max: 3.0
+- \b "~FREEZEONOFF" : \b [bool] Adaptive beamformer updates. 0 = Adaptation enabled 1 = Freeze adaptation, filter only min: False, default: False, max: True
+- \b "~AGCONOFF" : \b [bool] Automatic Gain Control.  0 = OFF  1 = ON min: False, default: True, max: True
+- \b "~MIN_NN" : \b [double] Gain-floor for non-stationary noise suppression. [-inf .. 0] dB (default: -10dB = 20log10(0.3)) min: 0.0, default: 0.3, max: 1.0
+- \b "~MIN_NS" : \b [double] Gain-floor for stationary noise suppression. [-inf .. 0] dB (default: -16dB = 20log10(0.15)) min: 0.0, default: 0.15, max: 1.0
+- \b "~GAMMA_NS" : \b [double] Over-subtraction factor of stationary noise. min .. max attenuation min: 0.0, default: 1.0, max: 3.0
+- \b "~HPFONOFF" : \b [int] High-pass Filter on microphone signals. 0 = OFF 1 = ON - 70 Hz cut-off 2 = ON - 125 Hz cut-off 3 = ON - 180 Hz cut-off min: 0, default: 1, max: 3
+- \b "~GAMMAVAD_SR" : \b [double] Set the threshold for voice activity detection. [-inf .. 60] dB (default: 3.5dB 20log10(1.5)) min: 0.0, default: 15.0, max: 1000.0
+- \b "~GAMMA_NN" : \b [double] Over-subtraction factor of non- stationary noise. min .. max attenuation min: 0.0, default: 1.1, max: 3.0
+- \b "~GAMMA_NN_SR" : \b [double] Over-subtraction factor of non-stationary noise for ASR.  [0.0 .. 3.0] (default: 1.1) min: 0.0, default: 1.1, max: 3.0
+
