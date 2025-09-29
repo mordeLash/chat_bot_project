@@ -12,7 +12,7 @@ ssh_process = None
 
 # Template ROS command to launch the audio_transcriber package
 # {MODEL_NAME} and {CHARACTER} will be replaced dynamically when the API is called
-ROS_COMMAND = "bash -c 'pwd && . devel/setup.bash && roslaunch audio_transcriber audio_transcriber.launch model_name:={MODEL_NAME} character:={CHARACTER}'"
+ROS_COMMAND = "bash -c 'pwd && . devel/setup.bash && roslaunch audio_transcriber audio_transcriber.launch model_name_arg:={MODEL_NAME} character_arg:={CHARACTER}'"
 
 
 # ----------------------------
