@@ -24,17 +24,15 @@ The system is built to be flexible, allowing for the easy addition of new models
 
 ### Architecture
 
-The system is designed with a modular structure to separate concerns and improve maintainability[cite: 413, 414].
+The system is designed with a modular structure to separate concerns and improve maintainability.
 
-* `main.py`: The entry point for running tests[cite: 416].
-* `test_handler.py`: The core orchestrator that manages the testing workflow, loading configurations, datasets, and models[cite: 421].
-* `dataset_handler.py`: Handles loading and preprocessing of datasets from sources like Hugging Face[cite: 439, 440].
-* `LLM_handler.py`: A unified interface for creating and interacting with LLMs via Ollama and LangChain[cite: 450].
-* `benchmark_handler.py`: Manages the execution of the actual benchmark, sends questions to the LLM, and calculates performance metrics[cite: 456].
-* `results_saver.py`: Saves detailed results and summaries to Excel files for analysis[cite: 472, 474].
+* `main.py`: The entry point for running tests.
+* `test_handler.py`: The core orchestrator that manages the testing workflow, loading configurations, datasets, and models.
+* `dataset_handler.py`: Handles loading and preprocessing of datasets from sources like Hugging Face.
+* `LLM_handler.py`: A unified interface for creating and interacting with LLMs via Ollama and LangChain.
+* `benchmark_handler.py`: Manages the execution of the actual benchmark, sends questions to the LLM, and calculates performance metrics.
+* `results_saver.py`: Saves detailed results and summaries to Excel files for analysis.
 
-![Benchmark System Architecture](https://i.imgur.com/5J3C3Qp.png)
-*Figure based on the diagram from the project report[cite: 408].*
 
 ### Benchmarks Implemented
 
