@@ -29,7 +29,7 @@ The system is built to be flexible, allowing for the easy addition of new models
 
 ### Architecture
 
-![code structure](chat_bot_project/assets/Benchmarking_diagram.png)
+![code structure](/assets/Benchmarking_diagram.png)
 
 The system is designed with a modular structure to separate concerns and improve maintainability.
 
