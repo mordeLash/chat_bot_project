@@ -1,3 +1,8 @@
+
+# Project Title
+
+A brief description of what this project does and who it's for
+
 # Chatbot Engineering and Adaptation Project
 
 This repository contains the final project for a B.Sc. in Engineering from Bar-Ilan University. The project focuses on the evaluation of Large Language Models (LLMs) and their implementation into a conversational chatbot system, including deployment on a humanoid robot.
@@ -24,6 +29,8 @@ The system is built to be flexible, allowing for the easy addition of new models
 
 ### Architecture
 
+![code structure](chat_bot_project/assets/Benchmarking_diagram.png)
+
 The system is designed with a modular structure to separate concerns and improve maintainability.
 
 * `main.py`: The entry point for running tests.
@@ -43,6 +50,11 @@ The tester includes implementations for the following benchmarks:
 * **SQuAD**: Assesses reading comprehension on a given text.
 * **ARC**: Tests knowledge in a wide range of subjects.
 * **Web Questions**: Evaluates the model's ability to answer common internet search-style questions.
+
+
+our results:
+
+![weighted sum graph](chat_bot_project/assets/Weighted_acc_graph.png)
 
 ### Installation and Usage
 
@@ -80,6 +92,8 @@ A conversational AI application built using the best-performing model from the e
 
 The application can run in a simple command-line mode or as a full-fledged ROS package for integration with the ARI robot. The core of the application is a RAG pipeline.
 
+![Chatbot Architecture](chat_bot_project/assets/Chatbot_diagram.png)
+
 
 **Workflow:**
 1.  A user's message is added to the conversation history.
@@ -88,10 +102,19 @@ The application can run in a simple command-line mode or as a full-fledged ROS p
 4.  The retrieved chunks, along with the full conversation history, are passed as context to the LLM.
 5.  The LLM's response is returned to the user and added to the history.
 
+
+### Examples
+
+![Joke expert example](chatbot_git/chat_bot_project/assets/Joke_conversation_example.png)
+
+![Signal Processing expert example](chatbot_git/chat_bot_project/assets/Signal_conversation_example.png)
+
+
 ### ROS Integration for ARI Robot
 
 For robotic applications, the chatbot is wrapped in a ROS node. This system converts spoken language to text, processes it through the RAG pipeline, and sends the generated text back to the robot to be synthesized into speech.
 
+![ROS App Architecture](chat_bot_project/assets/ROS_diagram.png)
 
 1.  The user speaks to the robot; the audio is captured and published to a ROS topic.
 2.  The `asr_transcriber` node receives the audio, sends it to Google ASR for transcription, and publishes the resulting text.

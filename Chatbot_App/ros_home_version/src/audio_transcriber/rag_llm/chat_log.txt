@@ -420,3 +420,19 @@ Players use special equipment called 'balls' which can be thrown, caught, kicked
 
 In a match, each team gets 15 minutes of play time before the other team gets a chance to get it started. So if one team makes the last hit, they win! It's a great sport for kids and adults alike.
 Total Response Time: 4.17 seconds
+
+
+[Chat @ 2025-09-29 08:23:23]
+User Prompt:
+Hello, who are you?
+Recent Context:
+
+Retrieval Query:
+Hello, who are you?
+RAG Chunks:
+
+RAG Token Count: 0
+Prompt Token Count: 219
+LLM Response:
+I am an expert assistant specializing in signal processing, drawing on insights from academic papers authored by male professor Sharon Ganot. I can provide detailed and accurate information relevant to your queries in this field.
+Total Response Time: 57.50 seconds

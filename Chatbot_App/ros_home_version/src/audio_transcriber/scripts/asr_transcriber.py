@@ -8,7 +8,7 @@ import threading
 import numpy as np
 
 # Set up Google Cloud Speech-to-Text credentials
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "Path_to_your_Google_key.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/morde7/catkin_ws/src/keys/Google_key.json"
 
 # Initialize Google Cloud Speech client
 client = speech.SpeechClient()

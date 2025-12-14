@@ -18,7 +18,7 @@ if not type -q bass
 end
 
 if test -z $_CATKIN_SETUP_DIR
-    set _CATKIN_SETUP_DIR /home/morde7/chatbot_app/ros_home_version/devel
+    set _CATKIN_SETUP_DIR /home/morde7/chatbot_git/chat_bot_project/Chatbot_App/ros_home_version/devel
 end
 
 set _SETUP_UTIL "$_CATKIN_SETUP_DIR/_setup_util.py"

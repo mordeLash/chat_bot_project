@@ -5,7 +5,7 @@
 # or fall back to the destination set at configure time
 
 if test -z $_CATKIN_SETUP_DIR
-    set _CATKIN_SETUP_DIR /home/morde7/chatbot_app/ros_home_version/devel
+    set _CATKIN_SETUP_DIR /home/morde7/chatbot_git/chat_bot_project/Chatbot_App/ros_home_version/devel
 end
 
 set CATKIN_SETUP_UTIL_ARGS "--extend --local"
