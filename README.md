@@ -54,7 +54,7 @@ The tester includes implementations for the following benchmarks:
 
 our results:
 
-![weighted sum graph](chat_bot_project/assets/Weighted_acc_graph.png)
+![weighted sum graph](/assets/Weighted_acc_graph.png)
 
 ### Installation and Usage
 
@@ -92,7 +92,7 @@ A conversational AI application built using the best-performing model from the e
 
 The application can run in a simple command-line mode or as a full-fledged ROS package for integration with the ARI robot. The core of the application is a RAG pipeline.
 
-![Chatbot Architecture](chat_bot_project/assets/Chatbot_diagram.png)
+![Chatbot Architecture](/assets/Chatbot_diagram.png)
 
 
 **Workflow:**
@@ -105,16 +105,16 @@ The application can run in a simple command-line mode or as a full-fledged ROS p
 
 ### Examples
 
-![Joke expert example](chatbot_git/chat_bot_project/assets/Joke_conversation_example.png)
+![Joke expert example](/assets/Joke_conversation_example.png)
 
-![Signal Processing expert example](chatbot_git/chat_bot_project/assets/Signal_conversation_example.png)
+![Signal Processing expert example](/assets/Signal_conversation_example.png)
 
 
 ### ROS Integration for ARI Robot
 
 For robotic applications, the chatbot is wrapped in a ROS node. This system converts spoken language to text, processes it through the RAG pipeline, and sends the generated text back to the robot to be synthesized into speech.
 
-![ROS App Architecture](chat_bot_project/assets/ROS_diagram.png)
+![ROS App Architecture](/assets/ROS_diagram.png)
 
 1.  The user speaks to the robot; the audio is captured and published to a ROS topic.
 2.  The `asr_transcriber` node receives the audio, sends it to Google ASR for transcription, and publishes the resulting text.
